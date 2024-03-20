@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+import '@fontsource-variable/outfit';
+import '@fontsource-variable/big-shoulders-display'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import MainContentPrimary from './components/MainContentPrimary'
+import MainContentSecondary from './components/MainContentSecondary'
+
+const App = () => {
+	return (
+		<Fragment>
+			{/* <Nav /> */}
+			<Header />
+			<MainContentPrimary />
+			<MainContentSecondary />
+			<Footer />
+		</Fragment>
+	)
 }
 
-export default App;
+export default App
