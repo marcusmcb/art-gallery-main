@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-import IconArrowRight from '../assets/icon-arrow-right.svg' // Ensure this path is correct
+import IconArrowRight from '../assets/icon-arrow-right.svg'
 
 const Header = () => {
 	return (
