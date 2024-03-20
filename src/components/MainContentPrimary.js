@@ -1,3 +1,4 @@
+import React from 'react'
 import '../App.css'
 import ImageGrid1 from '../assets/desktop/image-grid-1.jpg'
 
@@ -14,7 +15,7 @@ const MainContentPrimary = () => {
 				</div>
 			</div>
 			<div className='content-primary-right'>
-				<img src={ImageGrid1} alt='Gallery Image' />
+				<img src={ImageGrid1} alt='Gallery' />
 			</div>
 		</div>
 	)

@@ -100,7 +100,157 @@ body {
 	fill: white;
 }
 
-.content-primary-container,
+.content-primary-container {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content-primary-left {
+	flex: 40%; /* Now takes up 40% of the container */
+	padding: 30px; /* Adjust padding as needed */
+	box-sizing: border-box;
+}
+
+.content-primary-right {
+	flex: 60%; /* Now takes up the remaining 60% */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-primary-left-header {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 70px;
+	line-height: 70px;
+	color: black;
+	margin: 0 0 20px 0; /* Adjust bottom margin as needed */
+}
+
+.content-primary-left-text {
+	font-family: 'Outfit', sans-serif;
+	font-size: 22px;
+	line-height: 32px;
+	color: black;
+}
+
+.content-primary-right img {
+	width: 100%; /* Ensure the image is responsive */
+	height: auto;
+}
+
+.content-secondary-container {
+	display: flex;
+	margin-top: 30px;
+	gap: 20px; /* This creates space between the left and right sides */
+}
+
+.content-secondary-left,
+.content-secondary-right-image,
+.content-secondary-right-text-box {
+	margin: 10px; /* Adds a margin around each item */
+}
+
+.content-secondary-left {
+	flex: 60%; /* Occupies 60% of the space */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; /* Ensures no overflow from the image */
+}
+
+.content-secondary-right {
+	flex: 40%; /* Occupies the remaining 40% of the space */
+	display: flex;
+	flex-direction: column;
+	gap: 20px; /* Creates space between the image and the text box */
+}
+
+.content-secondary-right-image img,
+.content-secondary-left img {
+	width: 100%; /* Ensure the images are responsive and fill their containers */
+	display: block; /* Removes extra space below the image */
+}
+
+.content-secondary-right-image {
+	flex-grow: 1; /* Allows the image container to grow and fill the available space */
+	margin: 10px; /* Maintains consistency in spacing */
+}
+
+.content-secondary-right-text-box {
+	flex-grow: 1; /* Allows the text box to grow and match the height */
+	background-color: #151515; /* Black background */
+	color: white; /* White text */
+	padding: 30px; /* Provides padding around the text */
+	margin: 10px; /* Maintains spacing around the element */
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Centers the text vertically within the div */
+}
+
+.content-secondary-right-header {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 70px;
+	line-height: 70px;
+	color: white; /* Ensures the text color is white */
+	margin-bottom: 20px; /* Adds space between the header and the following text */
+}
+
+.content-secondary-right-text {
+	font-family: 'Outfit', sans-serif;
+	font-size: 22px;
+	line-height: 32px;
+	color: white; /* Ensures the text color is white */
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	height: 150px;
+	margin-top: 50px;
+}
+
+.footer-logo,
+.footer-text,
+.footer-icons {
+	display: flex;
+	align-items: center;
+}
+
+.footer-logo {
+	flex: 30%;
+	justify-content: center;
+}
+
+.footer-text {
+	flex: 40%;
+	font-family: 'Outfit', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	color: white;
+	padding: 0 120px; /* Adds 20px padding to the left and right */
+	/* Use padding: 20px; if you want to add equal padding all around */
+}
+
+.footer-icons {
+	flex: 30%; /* Adjusts to occupy the remaining space */
+	display: flex;
+	justify-content: center; /* Centers the icons in the div */
+	gap: 15px; /* Reduces the space between icons */
+	align-items: center; /* Aligns icons vertically in the center */
+}
+
+.footer-icons img {
+	filter: invert(100%);
+}
+
+/* .content-primary-container,
 .content-secondary-container {
 	display: flex;
 	margin-top: 30px;
@@ -146,4 +296,4 @@ body {
 
 .content-secondary-right-header {
 	margin-top: 20px;
-}
+} */

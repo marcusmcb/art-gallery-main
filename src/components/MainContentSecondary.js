@@ -1,3 +1,4 @@
+import React from 'react'
 import '../App.css'
 import ImageGrid2 from '../assets/desktop/image-grid-2.jpg'
 import ImageGrid3 from '../assets/desktop/image-grid-3.jpg'
@@ -6,11 +7,13 @@ const MainContentSecondary = () => {
 	return (
 		<div className='content-secondary-container'>
 			<div className='content-secondary-left'>
-				<img src={ImageGrid2} alt='Gallery Image' />
+				<img src={ImageGrid2} alt='Gallery Grid 2' />
 			</div>
 			<div className='content-secondary-right'>
-				<img src={ImageGrid3} alt='Another Gallery Image'/>
-				<div classname='content-secondary-right-text-box'>
+				<div className='content-secondary-right-image'>
+					<img src={ImageGrid3} alt='Gallery Grid 3' />
+				</div>
+				<div className='content-secondary-right-text-box'>
 					<div className='content-secondary-right-header'>
 						COME & BE INSPIRED
 					</div>
